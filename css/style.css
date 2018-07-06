@@ -1,0 +1,130 @@
+$accent: #EF629F;
+$secondary: #EECDA3;
+$dark: #222;
+$medium-dark: lighten($dark, 25%);
+
+
+@mixin section-padding {
+  padding: 10vh 0;
+  @media (min-width: 768px) { // I'd prefer this to be the $md Bootstrap grid variable
+    padding: 20vh 0;
+  }
+}
+
+body {
+  padding-top: 3rem;
+}
+
+.about {
+  padding: 20vh 0;
+  background: linear-gradient(to right, $secondary, $accent);
+}
+
+.research {
+  padding: 20vh 0;
+  background: linear-gradient(to right, $secondary, $accent);
+}
+
+.project {
+  padding: 20vh 0;
+  background: linear-gradient(to right, $secondary, $accent);
+}
+
+/*.research {
+  @include section-padding;
+  background: $dark;
+  color: white;
+}*/
+
+/*.project {
+  @include section-padding;
+  text-align: center;
+}*/
+
+.others{
+  transform: scale(1.1);
+  z-index: 40;
+  background: $dark;
+}
+
+footer {
+  padding: 10vh 0;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+.carousel-caption {
+    top: 0.5;
+}
+
+
+@import "compass/css3";
+
+html {
+  background: #eff0ef;
+}
+
+h1 {
+  font-size: 16px; 
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.testimonial-quote {
+    font-size: 16px;
+}
+
+.testimonial-quote blockquote {
+    /* Negate theme styles */
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    background: none;
+    color: gray;
+    font-family: Georgia, serif;
+    font-size: 3.5em;
+    font-style: italic;
+    line-height: 1.4 !important;
+    margin: 0;
+    position: relative;
+    text-shadow: 0 1px white;
+    z-index: 600;
+}
+
+.testimonial-quote blockquote * {
+    box-sizing: border-box; 
+}
+
+.testimonial-quote blockquote p {
+    color: #75808a; 
+    line-height: 1.4 !important;
+}
+
+.testimonial-quote blockquote p:first-child:before {
+    content: '\201C';
+    color: #81bedb;
+    font-size: 5.5em;
+    font-weight: 700;
+    opacity: .3;
+    position: absolute;
+    top: -.4em;
+    left: -.2em;    
+    text-shadow: none;
+    z-index: -300;
+}
+
+.testimonial-quote {
+    position: relative; 
+}
+
+.testimonial-quote .quote-container {
+    padding-left: 160px; 
+}
+  
+.testimonial-quote.right .quote-container {
+    padding-left: 0;
+    padding-right: 160px; 
+}

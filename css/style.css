@@ -1,33 +1,193 @@
-$accent: #EF629F;
-$secondary: #EECDA3;
-$dark: #222;
-$medium-dark: lighten($dark, 25%);
-
-
-@mixin section-padding {
-  padding: 10vh 0;
-  @media (min-width: 768px) { // I'd prefer this to be the $md Bootstrap grid variable
-    padding: 20vh 0;
-  }
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
-body {
-  padding-top: 3rem;
+body{
+    font-family: "Operator Mono SSm A", "Operator Mono SSm B", 'Source Code Pro', Menlo, Consolas, Monaco, monospace;
 }
 
-.about {
-  padding: 20vh 0;
-  background: linear-gradient(to right, $secondary, $accent);
+header{
+    width: 100%;
 }
 
-.research {
-  padding: 20vh 0;
-  background: linear-gradient(to right, $secondary, $accent);
+
+/*Logo*/
+.logo {
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
 }
 
-.project {
-  padding: 20vh 0;
-  background: linear-gradient(to right, $secondary, $accent);
+/*Navigation Bar*/
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+nav.black {
+    background: #e2dce2;
+}
+
+nav ul{
+    background: rgba(0,0,0,0);
+    list-style: none;
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    border-bottom: 3px solid #fff;
+    transition: 0.3s;
+}
+
+nav.black ul {
+    background: #e2dce2;
+    border-bottom: none;
+}
+
+nav ul li{
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+nav.black ul li a {
+    color: #000;
+}
+
+nav ul li a:hover {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 4px solid #db7acc;
+}
+
+nav.black ul li a:hover {
+    color: #fff;
+}
+
+/*nav ul li a:active {
+    background: #686868;
+    border-radius: 6px;
+    color: #fff;
+}*/
+
+nav.logo {
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    transition: .3s;
+}
+
+nav.black .logo {
+    color: #fff;
+}
+
+.active {
+    border-bottom: 4px solid #db7acc;
+}
+
+.menu-icon {
+    width: 100%;
+    height: 70px;
+    background: rgba(0,0,0,0);
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #000;
+    display: none;
+}
+
+/*Responsive Navigation Bar*/
+@media(max-width: 786px) {
+    .logo {
+        position: fixed;
+        top:0;
+        margin-top: 16px;
+    }
+    
+    nav ul {
+        max-height: 0px;
+        background: rgba(0,0,0,0);
+    }
+    
+    nav .black ul {
+        background: #e2dce2;
+    }
+    
+    .showing{
+        max-height: 30em;
+    }
+    
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+    }
+    
+    .menu-icon{
+        display: block;
+    }
+}
+
+/*Page 1: Home*/
+#home {
+    height: 100vh;
+    background: url(../img/img-home.jpg) no-repeat 50% 50%;
+    padding: 0;
+    margin-bottom: 0;
+    background-size: cover;
+}
+
+/*Page 2: About*/
+#about {
+    height: 100vh;
+    padding: 0;
+    margin-bottom: 0;
+    background: url(../img/img-about.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+/*Page 3: Research*/
+#research {
+    height: 100vh;
+    padding: 0;
+    margin-bottom: 0;
+    background: url(../img/img-research.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+/*Page 4: Project*/
+#project {
+    height: 100vh;
+    padding: 0;
+    margin-bottom: 0;
+    background: url(../img/img-projects.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+/*Page 5: Others*/
+#others{
+      transform: scale(1.1);
+      background: $dark;
 }
 
 /*.research {
@@ -41,12 +201,8 @@ body {
   text-align: center;
 }*/
 
-.others{
-  transform: scale(1.1);
-  z-index: 40;
-  background: $dark;
-}
 
+/*Footer*/
 footer {
   padding: 10vh 0;
   text-align: center;
@@ -59,6 +215,7 @@ footer {
 }
 
 
+/*
 @import "compass/css3";
 
 html {
@@ -77,7 +234,7 @@ h1 {
 }
 
 .testimonial-quote blockquote {
-    /* Negate theme styles */
+     Negate theme styles 
     border: 0;
     margin: 0;
     padding: 0;
@@ -128,3 +285,5 @@ h1 {
     padding-left: 0;
     padding-right: 160px; 
 }
+*/
+

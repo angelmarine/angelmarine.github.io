@@ -7,11 +7,11 @@ $(document).ready(function(){
 $(document).ready(function() {
     $(document).on("scroll", function(){
         var scrollPos = $(document).scrollTop();
-        $("a").each(function(){
+        $(".nav-links").each(function(){
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
             if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-                $("a").removeClass("active");
+                $(".nav-links").removeClass("active");
                 currLink.addClass("active");
             }
             else{

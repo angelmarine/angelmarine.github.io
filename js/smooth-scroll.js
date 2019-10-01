@@ -1,8 +1,5 @@
 // Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
+$('.nav-links')
   .click(function(event) {
     // On-page links
     if (
@@ -19,7 +16,7 @@ $('a[href*="#"]')
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 1000, function() {
+        }, 600, function() {
           // Callback after animation
           // Must change focus!
           var $target = $(target);

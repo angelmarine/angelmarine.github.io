@@ -1,3 +1,9 @@
+/*
+
+=================== General =================== 
+
+*/
+
 html, body {
     margin: 0;
     padding: 0;
@@ -5,15 +11,166 @@ html, body {
 }
 
 body{
-    font-family: "Operator Mono SSm A", "Operator Mono SSm B", 'Source Code Pro', Menlo, Consolas, Monaco, monospace;
+	font-family: "Amatic SC", cursive;
 }
 
 header{
     width: 100%;
 }
 
+h1{
+    color:white
+}
 
-/*Logo*/
+fieldset {
+    border: none;
+}
+
+hr{
+    border: 1px solid white;
+    margin-left: 0;
+    width: 90%;
+}
+
+p{
+    margin-bottom: 0px;
+}
+
+ul{
+    padding: 0;
+}
+
+
+.section-container {
+    position: relative;
+}
+
+.section-content {
+    position: absolute;
+    left: 3%;
+    top: 15%;
+    color: white;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.parag{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.carousel-parag{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.link{
+    color: goldenrod
+}
+
+
+/* 
+
+=================== Responsive Styles =================== 
+
+*/
+
+@media (min-width: 320px) {
+    legend {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+    h1,
+    .h1 {
+        font-size: calc(1.375rem + 1.5vw);
+    }
+    h2,
+    .h2 {
+        font-size: calc(1.325rem + 0.9vw);
+        padding: calc(0.125rem + 0.4vw) calc(1.125rem + 0.4vw);
+    }
+    h3,
+    .h3 {
+        font-size: calc(1.2rem + 0.9vw);
+        padding: calc(0.125rem + 0.4vw) calc(1.125rem + 0.4vw);
+    }
+    h4,
+    .h4 {
+        font-size: calc(1.175rem + 0.6vw);
+    }
+    
+    h5,
+    .h5 {
+        font-size: calc(0.25rem + 0.8vw);
+        line-height: calc(0.4rem + 2vw);
+    }
+    
+    .display-1 {
+        font-size: calc(2.325rem + 5.7vw);
+    }
+    .display-2 {
+        font-size: calc(1.675rem + 5.1vw);
+    }
+    .display-3 {
+        font-size: calc(1.575rem + 3.9vw);
+    }
+    .display-4 {
+        font-size: calc(1.375rem + 2.7vw);
+    }
+    
+    .carousel-display-4{
+        font-size: calc(2rem + 2vw);
+        margin-bottom: calc(1rem + 2vw);
+    }
+    
+    .parag {
+        font-size: calc(0.8rem + 0.5vw);
+        line-height: calc(1rem + 1.5vw);
+    }
+    
+    .carousel-parag {
+        font-size: calc(0.5rem + 0.8vw);
+        line-height: calc(1rem + 1.5vw);
+    }
+    
+    .close {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+    
+    .contact-logo {
+        width: calc(1.7rem + 1.5vw);
+        height: calc(1.7rem + 1.5vw);
+    }
+    
+    #home-profile-photo{
+        margin-top: calc(1.6rem + 1.5vw);
+        height: 25rem;
+    }
+    
+    #carouselExampleCaptions{
+        width: calc(10rem + 60vw);
+    }
+    
+    .carousel img{
+        height: calc(10rem + 50vw);
+        width: auto;
+    }
+    
+    #playlist-iframe{
+        max-height: 30rem;
+        width: calc(5rem + 30vw);
+        height: calc(1rem + 25vw);
+    }
+
+}
+
+
+/* 
+
+=================== Navigation Bar =================== 
+
+*/
+
+
 .logo {
     position: fixed;
     float: left;
@@ -23,11 +180,10 @@ header{
     font-size: 24px;
 }
 
-/*Navigation Bar*/
 nav {
     position: fixed;
     width: 100%;
-    z-index: 10;
+    z-index: 20;
 }
 
 nav.black {
@@ -61,8 +217,6 @@ nav ul li{
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
-    padding: 12px 30px;
     text-transform: uppercase;
     transition: .2s;
 }
@@ -115,7 +269,6 @@ nav.black .logo {
     display: none;
 }
 
-/*Responsive Navigation Bar*/
 @media(max-width: 786px) {
     .logo {
         position: fixed;
@@ -148,61 +301,300 @@ nav.black .logo {
     }
 }
 
-/*Page 1: Home*/
-#home {
-    height: 100vh;
-    background: url(../img/img-home.jpg) no-repeat 50% 50%;
-    padding: 0;
-    margin-bottom: 0;
-    background-size: cover;
-}
+/*
 
-/*Page 2: About*/
-#about {
+=================== Home =================== 
+
+*/
+#home-background {
+    position: relative;
     height: 100vh;
     padding: 0;
     margin-bottom: 0;
-    background: url(../img/img-about.jpg) no-repeat 50% 50%;
+    display: flex;
+    background: url(../img/img-home.jpg);
     background-size: cover;
 }
 
-/*Page 3: Research*/
-#research {
+#home-background:after {
+    content: "";
+    position: absolute;
+	width: 100%;
+    height: 100%;
+    top:0; 
+    left:0;
+    background-color:rgba(0,0,0);
+    opacity: 0.5;
+}
+
+#home-quote{
+    margin-top: 4rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#home-hr{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#home-content{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#home-contact{
+    margin-left: 1rem;
+}
+
+#contact-name{
+    margin-right: 1rem;
+}
+
+#home-profile-photo{
+    padding: 0px;
+    max-height: 25rem;
+    text-align: center;
+}
+
+
+#home-profile-desc {
+    
+    margin-top: 2rem;
+    max-height: 20rem;
+    text-align: center;
+}
+
+.contact-logo-container {
+    margin-top: 1rem;
+}
+
+#profile-img {
+    max-width:80%;
+    max-height:100%;
+}
+
+#wordle {
+    max-width:200%;
+    max-height:200%;
+}
+/*
+
+=================== About =================== 
+
+*/
+
+#about-background {
+    position: relative;
     height: 100vh;
     padding: 0;
     margin-bottom: 0;
-    background: url(../img/img-research.jpg) no-repeat 50% 50%;
+    display: flex;
+    background: url(../img/img-about.jpg);
     background-size: cover;
 }
 
-/*Page 4: Project*/
-#project {
+#about-background:after {
+    content: "";
+    position: absolute;
+	width: 100%;
+    height: 100%;
+    top:0; 
+    left:0;
+    background-color:rgba(0,0,0);
+    opacity: 0.7;
+}
+
+#about-content{
+    text-align: left;
+    padding-top: 3rem;
+    padding-right: 1.5rem;
+}
+
+#about-text-container{
+    padding-right: 3rem;
+}
+
+#about-text-prelog{
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#about-text-main{
+    line-height: 
+}
+/*
+
+=================== Research =================== 
+
+*/
+
+#research-content{
+}
+
+#research-topic{
+    margin-top: 5rem;
+}
+
+.research-topic-box{
+    text-align: center;
+    border: px solid white;
+    margin-right: 2rem;
+    padding: 1rem;
+    background: rgb(155,89,44,0.9);
+}
+
+#research-desc{
+    margin-top: 2rem;
+}
+
+#research-background {
+    position: relative;
     height: 100vh;
     padding: 0;
     margin-bottom: 0;
-    background: url(../img/img-projects.jpg) no-repeat 50% 50%;
+    display: flex;
+    background: url(../img/img-research.jpg);
     background-size: cover;
 }
 
-/*Page 5: Others*/
-#others{
-      transform: scale(1.1);
-      background: $dark;
+#research-background:after {
+    content: "";
+    position: absolute;
+	width: 100%;
+    height: 100%;
+    top:0; 
+    left:0;
+    background-color:rgba(0,0,0);
+    opacity: 0.5;
 }
 
-/*.research {
-  @include section-padding;
-  background: $dark;
-  color: white;
-}*/
+/*
 
-/*.project {
-  @include section-padding;
-  text-align: center;
-}*/
+=================== Project =================== 
+
+*/
 
 
-/*Footer*/
+#project-background {
+    position: relative;
+    height: 100vh;
+    padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    background: url(../img/img-projects.jpg);
+    background-size: cover;
+}
+
+#project-background:after {
+    content: "";
+    position: absolute;
+	width: 100%;
+    height: 100%;
+    top:0; 
+    left:0;
+    background-color:rgba(0,0,0);
+    opacity: 0.7;
+}
+
+#carouselExampleCaptions{
+    max-height: 60vh;
+    margin: 0 auto;
+}
+
+.carousel-inner > .item {
+   height: 20rem;
+}
+
+#project-content {
+    margin-top: 5rem;
+    width: 100%;
+    height: auto;
+}
+
+.carousel img {
+    max-width: 20rem;
+    max-height: 40rem;
+    opacity: 0;
+}
+
+.active {
+    border-bottom: none;
+}
+
+/*
+
+=================== Others =================== 
+
+*/
+
+#others-title{
+    margin-bottom: 2rem;
+}
+#others-background{
+    position: relative;
+    height: 100vh;
+    padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    background: url(../img/img-football.jpg);
+    background-size: cover;
+}
+
+#others-background:after {
+    content: "";
+    position: absolute;
+	width: 100%;
+    height: 100%;
+    top:0; 
+    left:0;
+    background-color:rgba(0,0,0);
+    opacity: 0.5;
+}
+
+#others-values{
+    margin-top: 2.5rem;
+}
+
+
+
+/*
+
+=================== Music =================== 
+
+*/
+
+#music-background{
+    position: relative;
+    height: 100vh;
+    padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    background: url(../img/img-music.jpeg);
+    background-size: cover;
+}
+
+#music-background:after {
+    content: "";
+    position: absolute;
+	width: 100%;
+    height: 100%;
+    top:0; 
+    left:0;
+    background-color:rgba(0,0,0);
+    opacity: 0.5;
+}
+
+#music-playlist{
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+/*
+
+=================== Footer =================== 
+
+*/
 footer {
   padding: 10vh 0;
   text-align: center;
@@ -211,79 +603,5 @@ footer {
 }
 
 .carousel-caption {
-    top: 0.5;
+    top: 0.5vh;
 }
-
-
-/*
-@import "compass/css3";
-
-html {
-  background: #eff0ef;
-}
-
-h1 {
-  font-size: 16px; 
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-
-.testimonial-quote {
-    font-size: 16px;
-}
-
-.testimonial-quote blockquote {
-     Negate theme styles 
-    border: 0;
-    margin: 0;
-    padding: 0;
-
-    background: none;
-    color: gray;
-    font-family: Georgia, serif;
-    font-size: 3.5em;
-    font-style: italic;
-    line-height: 1.4 !important;
-    margin: 0;
-    position: relative;
-    text-shadow: 0 1px white;
-    z-index: 600;
-}
-
-.testimonial-quote blockquote * {
-    box-sizing: border-box; 
-}
-
-.testimonial-quote blockquote p {
-    color: #75808a; 
-    line-height: 1.4 !important;
-}
-
-.testimonial-quote blockquote p:first-child:before {
-    content: '\201C';
-    color: #81bedb;
-    font-size: 5.5em;
-    font-weight: 700;
-    opacity: .3;
-    position: absolute;
-    top: -.4em;
-    left: -.2em;    
-    text-shadow: none;
-    z-index: -300;
-}
-
-.testimonial-quote {
-    position: relative; 
-}
-
-.testimonial-quote .quote-container {
-    padding-left: 160px; 
-}
-  
-.testimonial-quote.right .quote-container {
-    padding-left: 0;
-    padding-right: 160px; 
-}
-*/
-

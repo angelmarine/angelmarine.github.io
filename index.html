@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
     
-<!-- HEAD -->    
+<!-- HEAD -->
+
 <head>
-    <meta charset="UTF-8">
-    <title>Life is an adventure</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <!--Custom Stylesheet-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <title>Life is an adventure</title>
+
 </head>
-    
-    
-<!-- BODY -->  
+
+
+<!-- BODY -->
+
 <body>
     <div class="wrapper">
         <header>
-            <!-- Navigation Bar -->  
+            <!-- Navigation Bar -->
             <nav>
                 <div class="menu-icon">
                     <i class="fa fa-bars fa-2x"></i>
@@ -26,105 +42,327 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#research">Research</a></li>
-                        <li><a href="#project">Project</a></li>
-                        <li><a href="#others">Interests</a></li>
+                        <li><a class="h2 nav-links" href="#home">Home</a></li>
+                        <li><a class="h2 nav-links" href="#about">About</a></li>
+                        <li><a class="h2 nav-links" href="#research">Research</a></li>
+                        <li><a class="h2 nav-links" href="#project">Project</a></li>
+                        <li><a class="h2 nav-links" href="#others">Interests</a></li>
                     </ul>
                 </div>
             </nav>
+            <!-- Navigation Bar -->
         </header>
     </div>
-    
-    
-    <!-- Home -->  
-    <section class="jumbotron home" id="home">
-        <div class="container-fluid"> 
+
+
+    <!-- Home -->
+    <section class="section-container container-fluid no-padding" id="home">
+        <!--Home Background-->
+        <div id="home-background">
+        </div>
+        <!--Home Background-->
+
+        <!--Home Contents-->
+        <div id="home-content" class="section-content container">
+
+            <!--Home Quotes-->
+            <div class="row" id="home-quote">
+                <p class="display-3">" Life is an adventure! "</p>
+            </div>
+            <!--Home Quotes-->
+
+            <div class="row" id="home-hr">
+                <hr>
+            </div>
+
+            <!--Home Name + Contacts-->
+            <div class="row text-left" id="home-contact">
+                <div id="contact-name" class="col-5">
+                    <p class="display-4">Ku Bon Kyung (Steve)</p>
+                </div>
+                <div class="col-1 contact-logo-container">
+                    <a href="https://www.facebook.com/bonkyung.ku.3">
+                        <img class="contact-logo" src="img/logo-fb.png"/>
+                    </a>
+                </div>
+                <div class="col-1 contact-logo-container">
+                    <a href="https://www.instagram.com/bon1203ku/?hl=en">
+                    <img class="contact-logo" src="img/logo-ig.png"/>
+                    </a>
+                </div>
+                <div class="col-1 contact-logo-container">
+                    <img class="contact-logo" src="img/logo-kt.png" data-toggle="tooltip" title="bon1203ku"/>
+                </div>
+                <div class="col-1 contact-logo-container">
+                    <img class="contact-logo" src="img/logo-we.png" data-toggle="tooltip" title="bon1203ku"/>
+                </div>
+                <div class="col-1 contact-logo-container">
+                    <img class="contact-logo" src="img/logo-mail.png" data-toggle="tooltip" title="bkku@connect.ust.hk"/>
+                </div>
+            </div>
+            <!--Home Name + Contacts-->
+
+
+            <!--Home Photo + Wordle-->
+            <div class="row" id="home-profile">
+                <div class="col-5" id="home-profile-photo">
+                    <img id="profile-img" src="img/img-profile.jpg" />
+                </div>
+                <div class="col-6" id="home-profile-desc">
+                    <ul style="list-style-type:none;">
+                        <li class="h3"># Year-2 CSE MPhil Student</li>
+                        <li class="h3"># Data Visualization </li>
+                        <li class="h3"># Active Learner </li>
+                        <li class="h3"># Korean </li>
+                        <li class="h3"># Music Lover</li>
+                        <li class="h3"># Saturday Footballer </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!--Home Photo + Wordle-->
+        </div>
+        <!--Home Contents-->
+
+    </section>
+    <!-- Home -->
+
+    <!-- About -->
+    <section class="section-container container-fluid no-padding" id="about">
+        <div id="about-background">
+        </div>
+
+        <!--About Contents-->
+        <div id="about-content" class="section-content">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="testimonial-quote group">
-                        <div class="quote-container">
-                            <blockquote>
-                                <p>Life is an adventure! ”</p>
-                            </blockquote> 
+                <div class="col-sm-2 col-md-5">
+                </div>
+                <div class="col-sm-10 col-md-7">
+                    <p class="display-3">Welcome !</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-md-5">
+                </div>
+                <div class="col-sm-10 col-md-7">
+                    <p class="display-4">My name is Bon Kyung Ku (Steve)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-md-5">
+                </div>
+                <div class="col-sm-10 col-md-7">
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-md-5">
+                </div>
+                <div id="about-text-container" class="col-sm-10 col-md-7">
+                    <p id="about-text-prelog" class="parag">
+                        A brief introduction about my 26-years long life.
+                    </p>
+                    <p id="about-text-main" class="parag">
+                        I was born in South Korea in 1993. I moved to Malaysia when I was 9 years old. In Malaysia, I studied in Sayfol International School until I graduated my high school. After that, I studied in USCI College for A’level Exams and finally I am now in Hong Kong. In summer of 2018, I received Bachelor of Science in CSE in Hong Kong University of Science and Technology.
+                        I am currently an MPhil CSE Student in Hong Kong University of Science and Technology under Professor Huamin and also a member of Vislab.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--About Contents-->
+    </section>
+    <!-- About -->
+
+    <!-- Research -->
+    <section class="section-container container-fluid no-padding" id="research">
+        <div id="research-background">
+        </div>
+        <!--Research Contents-->
+        <div id="research-content" class="section-content container">
+
+            <!--Research Title-->
+            <div class="row" id="research-title">
+                <div class="col-6">
+                    <p class="display-3"> Research Interests</p>
+                    <hr id="research-hr">
+                </div>
+            </div>
+            <!--Research Title-->
+
+
+            <div class="row" id="research-topic">
+                <div class="col-3 research-topic-box h4"> Data Visualization </div>
+                <div class="col-3 research-topic-box h4"> Machine Learning </div>
+                <div class="col-3 research-topic-box h4"> Data Mining & Analytics </div>
+            </div>
+
+            <div class="row" id="research-desc">
+                <div class="col-10">
+                    <p class="parag">
+                        My research journey just started and I am planning to explore more on these three areas since they are very closely related. Currently, I am digging into applicaton of data visualization in music-related and finance-related data. Apart from that, I am also interested in Explanable AI and applications of machine learning techniques in practical uses.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!--Research Contents-->
+    </section>
+
+
+    <!-- Projects -->
+    <section class="section-container container-fluid no-padding" id="project">
+        <div id="project-background">
+        </div>
+        <div id="project-content" class="section-content row">
+            <div class="col-12">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block" alt="...">
+                            <div class="carousel-caption">
+                                <p class="carousel-display-4">
+                                    Pulse Of HKUST
+                                </p>
+                                <p class="carousel-parag">
+                                    Pulse of HKUST is data-driven visualization platform to provide accessibility and connection between university community in a smart campus, so that the community can make smart data-driven decisions.
+                                </p>
+                                <p class="carousel-parag">
+                                    Initiated as my Final Year Project in my undergraduate studies, Pulse of HKUST has grown to a national award winning project in Hong Kong.
+                                </p>
+                                <a class="carousel-parag link" href="https://pulse.ust.hk/">
+                                    [Website Link]
+                                </a>
+                            </div>
                         </div>
-                    </div>    
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- About -->  
-    <section class="jumbotron about" id="about">
-        <div class="container"> 
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="display-3"> About</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Research -->  
-    <section class="jumbotron research" id="research">
-        <div class="container"> 
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="display-3"> Research </h1>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    <!-- Projects -->  
-    <section class="jumbotron project" id="project">
-        <div class="container"> 
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="display-3"> Projects Done </h1>
+                        <div class="carousel-item">
+                            <img class="d-block" alt="...">
+                            <div class="carousel-caption">
+                                <p class="carousel-display-4">
+                                    Seep Zero 
+                                </p>
+                                <p class="carousel-parag">
+                                    Inspired from AlphaGo Zero, this project about using a reinforcement learning approach to play a card game called Seep. Whilst, the game of Go is a deterministic game, we tried to apply technique adopted by AlphaGo Zero in an indeterministic card game. 
+                                </p>
+                                <a class="carousel-parag link" href="https://github.com/abishekpuri/Seep_AI">
+                                    [Github Link]
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block" alt="...">
+                            <div class="carousel-caption">
+                                <p class="carousel-display-4">
+                                    University Ranking Analysis System
+                                </p>
+                                <p class="carousel-parag">
+                                    A system for visualizing and analyzing university ranking system to help understand the underlying relationship in ranking attributes and ultimately, assist university resource allocations in multicriteria decision-making process.
+                                </p>
+                                <p class="carousel-parag link">
+                                    [Currently Private, Sorry!]
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Other Interests -->    
-    <section class="jumbotron others" id="others">
-        <div class="container"> 
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="display-3"> Other Interests </h1>
-                    <iframe src="https://open.spotify.com/embed/user/214wpop7ps6jtwj3jukv6gkga/playlist/0k4GtnCNOuHWyeVLYjeQyn" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <script src="js/playlist.js"></script>
+    <!-- Other Interests -->
+    <section class="section-container container-fluid no-padding" id="others">
+        <div id="others-background">
+        </div>
+        <div id="others-content" class="section-content container">
+            <!--Other Title-->
+            <div class="row" id="others-title">
+                <div class="col-6">
+                    <p class="display-3"> Football </p>
+                    <hr id="others-hr">
                 </div>
             </div>
+            <!--Other Title-->
+            
+            <div class="row" id="others-desc">
+                <div class="col-10">
+                    <p class="parag">
+                        Football has always been a part of my life.
+                        I was 7 years old when my father first taught me how to kick the ball.
+                        From then I played football frequently, football being my favourite hobby.
+                        I also played in school teams and participated in competitions.
+                        Football means much more than just a leisure activity for me.
+                        It has delivered meaningful life lessons and valuable friendships to my life.
+                        Eventually, it also helped in developing my life values:
+                    </p>
+                </div>
+            </div>
+            
+            
+            <div class="row" id="others-values">
+                <div class="col-3 h1"> Effort </div>
+                <div class="col-3 h1"> Teamwork </div>
+                <div class="col-3 h1"> Communication </div>
+            </div>
+            
         </div>
     </section>
     
     
-    <!-- Footer -->
-    <footer class="container-fluid">
-        <div class="row justify-content-center">
-            <p>Follow me on</p>
+    <!-- Music -->
+    <section class="section-container container-fluid no-padding" id="music">
+        <div id="music-background">
         </div>
-        <!--<div class="row justify-content-center">
-            <ul class="list-inline">
-                <li class="list-inline-item">
-                    <a href="#"><img src="https://en.facebookbrand.com/wp-content/uploads/2016/05/flogo_rgb_hex-brc-site-250.png" height="50" width="50"/></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#"><img src="https://sguru.org/wp-content/uploads/2018/01/2000px-Instagram_logo_2016.svg_.png" height="50" width="50"/></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#"><img src="https://www.shareicon.net/data/128x128/2016/11/22/854957_email_512x512.png" height="50" width="50"/></a>
-                </li>
-                
-            </ul>
-        </div>-->
-    </footer>
+        
+        <div id="music-content" class="section-content container">
+            <!--Music Title-->
+            <div class="row" id="music-title">
+                <div class="col-6">
+                    <p class="display-3"> Music </p>
+                </div>
+            </div>
+            <!--Music Title-->
+            
+            <div class="row" id="music-desc">
+                <div class="col-10">
+                    <p class="h1">
+                        I love music. Discover what's trending in my library!
+                    </p>
+                </div>
+            </div>
     
+            <div class="row" id="music-playlist">
+                <iframe id="playlist-iframe" src="https://open.spotify.com/embed/playlist/3NpTcJVwQ0dHj5sopHf4Uv" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+        
+        
+        <div class="section-content">
+            
+        </div>
+    </section>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip({'placement': 'bottom'});
+    });
+    </script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/resp-sticky-nav.js"></script>
-</body>
-</html>
+    <script src="js/playlist.js"></script>
+</body></html>

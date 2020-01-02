@@ -190,7 +190,7 @@ div {
 
 
 .logo {
-    height: 100%;
+    height: 8vh;
     position: absolute;
     left: 1%;
     top: 0;
@@ -525,10 +525,6 @@ nav.black .logo {
     justify-content: flex-start;
 }
 
-.slide {
-    margin-right: 5vw;
-}
-
 .slide-image {
     padding-top: 3vw;
     height: 40vw;
@@ -545,7 +541,7 @@ nav.black .logo {
     width: 40vw;
     max-height: 100%;
     color: #fff;
-    padding: 3vw 5vw 3vw 5vw;
+    padding: 3vw 10vw 3vw 5vw;
 }
 
 .slide-date {
@@ -594,14 +590,14 @@ nav.black .logo {
     margin-top: -5.5vw;
 }
 
-.arrows {
+.slide-arrows {
     width: 3.5vw;
     margin-top: -9vw;
     margin-left: 72vw;
     position: relative;
 }
 
-.arrow {
+.slide-arrow {
     display: inline-block;
     position: absolute;
     width: 1.2vw;
@@ -615,12 +611,12 @@ nav.black .logo {
     color: transparent;
 }
 
-.arrow:hover {
+.slide-arrow:hover {
     border-color: #0A8ACB;
     border-width: 0.25vw;
 }
 
-.arrow:before {
+.slide-arrow:before {
     display: block;
     height: 200%;
     width: 200%;
@@ -630,12 +626,12 @@ nav.black .logo {
     transform: rotate(45deg);
 }
 
-.arrow.prev {
+.slide-arrow.prev {
     transform: rotate(-45deg);
     left: 0;
 }
 
-.arrow.next {
+.slide-arrow.next {
     transform: rotate(135deg);
     right: 0;
 }
@@ -648,11 +644,14 @@ nav.black .logo {
     }
 
     .slide-image {
-        width: 70vw;
+        width: 80vw;
+        height: 30vh;
+        padding-right: 5vw;
     }
 
     .slide-content {
-        width: 70vw;    
+        width: 80vw;    
+        padding: 3vw 5vw 3vw 5vw;
     }
     
     .slide-date {
@@ -685,7 +684,7 @@ nav.black .logo {
         font-size: calc0.5rem + 0.9vw);
     }
     
-    .arrows{
+    .slide-arrows{
         margin-top: 0;
     }
 
